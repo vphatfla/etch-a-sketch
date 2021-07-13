@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image/background-image.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+}
+h1{
+    margin-top: 5%;
+    font-size: 50px;
+}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+.container {
+    margin-top: 2.5%;
+    border: 1px solid black;
+    display: grid;    
+    height: 500px;
+    width: 500px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    gap: 0px;
+}
+.gridsize{
+    margin-top: 2%;
+}
+.clearGrid{
+    margin-top: 2%;
+}
+.grid-item {
+    border: 0px solid white;
+    background-color: white;
+    text-align: center;
+    opacity: 0.1;
+}
+#grid-size{
+    opacity: 0.5;
+}
+button{
+    background-color:transparent;
+    color: white;
+    padding: 5px;
+    font-family: 'Otomanopee One', sans-serif;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+button:hover{
+    background-color: red;
+    color: black
+}
